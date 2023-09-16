@@ -4,4 +4,4 @@ git add .
 
 git commit -a -m "commit."
 
-git push git@github.com:ryuku04/BeginnersSession.git
+git push git@github.com:ryuku04/Atcoder.git
