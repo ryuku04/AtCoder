@@ -1,6 +1,6 @@
 # usr/bin/python
 # -*- coding:utf-8 -*-
-# https://atcoder.jp/contests/abc320/tasks/abc322_a
+# https://atcoder.jp/contests/abc322/tasks/abc322_a
 
 import io
 import sys

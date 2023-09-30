@@ -1,6 +1,6 @@
 # usr/bin/python
 # -*- coding:utf-8 -*-
-# https://atcoder.jp/contests/abc320/tasks/abc322_c
+# https://atcoder.jp/contests/abc322/tasks/abc322_c
 
 import io
 import sys
@@ -15,36 +15,20 @@ sys.stdin = io.StringIO(_INPUT)
 
 def abc322c(n,m,alist):
     alist.append(n)
+    anslist = []
 
-    for j in range(1,int(alist[0])):
-            if (int(alist[0])-j >= 0):
-#                print(int(alist[i]),j,int(alist[i])-j)
-                print(int(alist[0])-j)
-            elif(int(alist[0])-j < 0):
-#                print(int(alist[i]),j,int(alist[i+1])-j)
-                print(int(alist[1])-j)         
-
+    for j in range(1,int(alist[0])+1):
+#        print(str(int(alist[0])-j))
+        anslist.append(str(int(alist[0])-j))
 
     for i in range(0,m-1):
-        for j in range(int(alist[i]),int(alist[i+1])):
-                if (int(alist[i])-j >= 0):
-#                    print(int(alist[i]),j,int(alist[i])-j)
-                    print(int(alist[i])-j)
-                elif(int(alist[i])-j < 0):
-#                    print(int(alist[i]),j,int(alist[i+1])-j)
-                    print(int(alist[i+1])-j)
+        for j in range(int(alist[i])+1,int(alist[i+1])+1):
+#            print(str(int(alist[i+1])-j))
+            anslist.append(str(int(alist[i+1])-j))
 
-    print(0)
+    answer = str("\n".join(anslist))
 
-    for i in range(1,n+1):
-        if i <= m:
-           ans = m-i
-#           print(ans)
-        if m < i:
-           ans = n-i
-#           print(ans)
-
-    return -1
+    return answer
 
 
 if __name__ == '__main__':
@@ -53,4 +37,4 @@ if __name__ == '__main__':
     m = int(list[1])
     alist = input().split(" ")
 
-    abc322c(n,m,alist)
+    print(abc322c(n,m,alist))
