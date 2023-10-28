@@ -1,6 +1,6 @@
 # usr/bin/python
 # -*- coding:utf-8 -*-
-# https://atcoder.jp/contests/abc324/tasks/abc324_a
+# https://atcoder.jp/contests/abc325/tasks/abc325_a
 
 import io
 import sys
@@ -12,11 +12,11 @@ Takahashi Chokudai
 sys.stdin = io.StringIO(_INPUT)
 ##########
 
-def abc324a(s):
+def abc325a(s):
     answer = s + " san"
     return answer
 
 
 if __name__ == '__main__':
     s = input().split(" ")[0]
-    print(abc324a(s))
+    print(abc325a(s))

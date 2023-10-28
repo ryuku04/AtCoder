@@ -56,7 +56,6 @@ def seachLinkageSensor(i,j,hwlist,integratedhwlist):
             answer =  False
             integratedhwlist[j+1] = replaceCharAtIndext(".",i+1,integratedhwlist[j+1])
 
-#    print(i+1,j+1,"The sensor is isorated")
     return answer
 '''
 
@@ -118,6 +117,7 @@ def abc325c(hwlist):
                 if isLincagedSensor(i,j,hwlist) == True:
 #                    print(i+1,j+1, "Sensor is lincaged")
                     integratedLinkageSensors(i,j,integratedhwlist)
+
 
 #    print(hwlist)
 #    print(integratedhwlist)
