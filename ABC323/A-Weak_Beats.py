@@ -8,7 +8,6 @@ import sys
 ##########
 _INPUT = """\
 1010100000101000
-""
 """
 sys.stdin = io.StringIO(_INPUT)
 ##########

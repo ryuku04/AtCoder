@@ -52,18 +52,21 @@ def abc323c(scorelist,statuslist):
             answerlist.append(0)
             continue
 
-# if a player has maxscore, needs no score
+# get list of unsolved Problem for each players
         status = statuslist[i]
         playerNoSolveProblist = []
         for j in range(0,len(status)):
             if status[j] == "x":
                 playerNoSolveProblist.append(scorelist[j])
 
+# convert to Integer
         playerNoSolveProblist_int = []
         for j in range(len(playerNoSolveProblist)):
             playerNoSolveProblist_int.append(int(playerNoSolveProblist[j]))
         playerNoSolveProblist_sort = sorted(playerNoSolveProblist_int)
 
+# add scores in order of highest score
+# if the needscore > target score, it will be breaked.
         targetscore = int(maxplayerscore - playerscorelist[i])
         needscore = 0
         neednum = 0
