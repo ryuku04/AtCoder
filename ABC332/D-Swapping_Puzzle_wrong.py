@@ -45,8 +45,8 @@ def abc332d(mtx_a,mtx_b):
     mtx_b_1d = sum(mtx_b, [])
     mtx_b_1d.sort()
 
-    print("A'=",mtx_a_1d)
-    print("B'=",mtx_b_1d)
+#    print("A'=",mtx_a_1d)
+#    print("B'=",mtx_b_1d)
 
     if mtx_a_1d != mtx_b_1d:
         return answer

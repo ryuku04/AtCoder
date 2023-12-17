@@ -119,8 +119,13 @@ def abc325c(hwlist):
                     integratedLinkageSensors(i,j,integratedhwlist)
 
 
-#    print(hwlist)
-#    print(integratedhwlist)
+    print("----- hwlist -----")
+    for i in range(len(hwlist)):
+        print(hwlist[i])
+
+    print("----- integratedhwlist -----")
+    for i in range(len(integratedhwlist)):
+        print(integratedhwlist[i])
 
     for hw in integratedhwlist:
         answer += hw.count("#")
@@ -129,12 +134,11 @@ def abc325c(hwlist):
 
 
 if __name__ == '__main__':
-    textline = []
     hwlist = []
     n = int(sys.stdin.readline().rstrip().split(" ")[0])
     for i in range(0,n):
-        textline = sys.stdin.readline().rstrip().split(" ")
-        hwlist.append(textline[0])
+        textline = sys.stdin.readline().rstrip()
+        hwlist.append(textline)
 
 #    print(hwlist)
         
